@@ -1,9 +1,8 @@
 import React from 'react';
-import './Square.style.css';
 
 const Square = ({ value }) => {
   return (
-    <button type="button" className="btn">
+    <button type="button" className="square">
       {value + 1}
     </button>
   );

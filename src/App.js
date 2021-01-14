@@ -14,7 +14,7 @@ const App = () => {
     : `Next Player is ${isXNext ? 'X' : 'O'}`;
 
   const handleSquareClick = position => {
-    if (board[position]) {
+    if (board[position] || winner) {
       return;
     }
     setBoard(prev => {
